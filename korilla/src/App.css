@@ -1,0 +1,16 @@
+.receipt-info {
+  border: 2px solid coral;
+  padding: 1em;
+  margin: 1em;
+  flex-basis: 100px;
+  
+}
+
+p {
+  color: indigo
+}
+
+.receipt-container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
