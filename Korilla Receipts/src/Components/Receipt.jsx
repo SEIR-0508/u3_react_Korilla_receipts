@@ -2,7 +2,7 @@ const Receipt = (props) => {
 
     return (
         <div>
-            <h1>{props.person}</h1>
+            <h2>{props.person}</h2>
             <p>Main: {props.main}</p>
             <p>Protein: {props.protein}</p>
             <p>Rice: {props.rice}</p>

@@ -61,9 +61,20 @@ const App = () => {
     },
   ];
 
+  const showNotPaid = (paid) => {
+    const notPaid = receipts.filter(receipt => !receipt.paid)
+    return notPaid;
+  }
+  
+
   return (
+    <div className='App'>
+      <header className='App-header'>
+        <h1>Korilla</h1>
+      </header>
+    
     <div className='receipts'>
-      {receipts.map(receipts => (
+      {showNotPaid().map(receipts => (
         <Receipt person={receipts.person}
                   main={receipts.order.main}
                   protein={receipts.order.protein}
@@ -73,6 +84,7 @@ const App = () => {
                   cost={receipts.order.cost}
         />
       ))}
+    </div>
     </div>
   )
   
