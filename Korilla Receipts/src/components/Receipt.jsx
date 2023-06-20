@@ -1,7 +1,5 @@
 const Receipt = (props) => {
 
-    console.log(props)
-
     let paid = props.paid
 
     if(paid === false) {

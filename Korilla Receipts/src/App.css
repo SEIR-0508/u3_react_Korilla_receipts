@@ -17,12 +17,15 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
+  margin-bottom: 3rem;
 }
 
 .receiptDiv {
   border: black solid 1px;
   padding: 1rem;
   border-radius: 10px;
+  min-width: 430px;
+  min-height: 531px;
   transition: 0.5s;
 }
 
