@@ -1,14 +1,14 @@
 const Receipt = (props) => {
 
     return (
-        <div>
+        <div className="ind-receipt">
             <h2>{props.person}</h2>
-            <p>Main: {props.main}</p>
-            <p>Protein: {props.protein}</p>
-            <p>Rice: {props.rice}</p>
-            <p>Sauce: {props.sauce}</p>
-            <p>Drink: {props.drink}</p>
-            <p>Cost: {props.cost}</p>
+            <p><span>Main:</span> {props.main}</p>
+            <p><span>Protein:</span> {props.protein}</p>
+            <p><span>Rice:</span> {props.rice}</p>
+            <p><span>Sauce:</span> {props.sauce}</p> 
+            <p><span>Drink:</span> {props.drink}</p>
+            <p><span>Cost:</span> {props.cost}</p>
         </div>
     )
 }
