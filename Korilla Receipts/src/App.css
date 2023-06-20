@@ -1,0 +1,58 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+body {
+  background: linear-gradient(45deg, rgb(232, 74, 74), rgb(148, 148, 234));
+}
+
+.break {
+  margin-bottom: 3rem;
+  border: 2px solid black;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.receiptDiv {
+  border: black solid 1px;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.receiptDiv:hover {
+  cursor:pointer;
+  transform: translateY(-10px);
+  background-color: rgb(148, 148, 234);
+}
+
+h2 {
+  font-variant: small-caps;
+}
+
+.contents {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center center;
+}
+
+hr {
+  border: solid black 1px;
+}
+
+.total {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center center;
+}
+
+.toppings {
+  margin: 0;
+  padding: 0;
+}
