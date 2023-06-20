@@ -71,7 +71,7 @@ function App() {
       <header>
         <h1>Korilla</h1>
       </header>
-    <div className='receipts-info'>
+    <div className='receipt-container'>
         <Receipts
           person = {receipts[0].person}
           main = {receipts[0].order.main}
