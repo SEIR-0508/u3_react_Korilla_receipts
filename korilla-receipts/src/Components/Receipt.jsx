@@ -7,6 +7,12 @@ export default function Receipt({ id, person, order }) {
       <h3>Protein: {protein}</h3>
       <h3>Rice: {rice}</h3>
       <h3>Sauce: {sauce}</h3>
+      <h3>
+        Toppings:{" "}
+        {toppings.map((topping) => (
+          <li>{topping}</li>
+        ))}
+      </h3>
       <h3>Drink: {drink}</h3>
       <h3>Cost: {cost}</h3>
     </div>
