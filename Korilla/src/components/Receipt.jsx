@@ -2,13 +2,13 @@ const Receipt = (props) => {
     return (
         <div class="individualReceipt">
             <h2 class="person">Person: {props.person}</h2>
-            <p>ID: {props.id}</p>
-            <p>Main: {props.main}</p>
-            <p>Protein: {props.protein}</p>
-            <p>Rice: {props.rice}</p>
-            <p>Sauce: {props.sauce}</p>
-            <p>Drink: {props.drink}</p>
-            <p>Cost: ${props.cost}</p>
+            <p><strong>ID:</strong> {props.id}</p>
+            <p><strong>Main:</strong> {props.main}</p>
+            <p><strong>Protein:</strong> {props.protein}</p>
+            <p><strong>Rice:</strong> {props.rice}</p>
+            <p><strong>Sauce:</strong> {props.sauce}</p>
+            <p><strong>Drink:</strong> {props.drink}</p>
+            <p><strong>Cost:</strong> ${props.cost}</p>
         </div>
     )
 }
