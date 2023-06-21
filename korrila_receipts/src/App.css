@@ -1,42 +1,47 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body {
+  height: 100vh;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header {
+  height: 20vmin;
+  margin-top: -15vmin;  /* I have no idea why I need this -15 vmin to have the title be flush with the top of the page... */ 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+h1 {
+  font-size: 20vmin;
+  line-height: 1.1;
+  /* https://bootcamp.uxdesign.cc/gradient-text-in-css-609068d3f953#:~:text=For%20example%20color%3A%20linear%2Dgradient,and%20the%20text%20more%20readable.
+  found this tutorial on how to make a gradient the text color*/
+  background: linear-gradient(.25turn, blue, tan);
+  background-clip: text;
+  /* color: transparent; */
 }
 
-.card {
-  padding: 2em;
+#app {
+  display: flex;
+  flex-direction: column;
 }
 
-.read-the-docs {
-  color: #888;
+main {
+  display: flex;
+  justify-content: center;
+  gap: 1vmin;
+}
+
+main > * {
+  width: 30vmin;
+  display: flex;
+  flex-direction: column;
+  border: 1vmin solid white;
+  padding: 2vmin;
+  margin: 1vmin;
+}
+
+span {
+  font-weight: bold;
+  color: rgb(81, 149, 10)
 }
