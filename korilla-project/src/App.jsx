@@ -74,7 +74,7 @@ function App() {
     <div class='cards'>
     {receipts.map(element =>{
       if (element.paid !== true){
-      return <Review name={element.person} mainOrder={element.order.main} proteinOrder={element.order.protein}  riceOrder={element.order.rice}  sauceOrder={element.order.sauce} toppingsOrder={element.order.toppings} drinkOrder={element.order.drink} cost={element.order.cost} />
+      return <Review name={element.person} mainOrder={element.order.main} proteinOrder={element.order.protein}  riceOrder={element.order.rice}  sauceOrder={element.order.sauce} toppingsOrder={element.order.toppings.join(', ')} drinkOrder={element.order.drink} cost={element.order.cost} />
       }
 {/*       
       <Review2 name2={receipts[1].person} mainOrder2={receipts[1].order.main} proteinOrder2={receipts[1].order.protein}  riceOrder2={receipts[1].order.rice}  sauceOrder2={receipts[1].order.sauce} toppingsOrder2={receipts[1].order.toppings} drinkOrder2={receipts[1].order.drink} cost2={receipts[1].order.cost} />
