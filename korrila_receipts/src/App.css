@@ -1,0 +1,47 @@
+#root {
+  margin: 0 auto;
+}
+
+body {
+  height: 100vh;
+}
+
+header {
+  height: 20vmin;
+  margin-top: -15vmin;  /* I have no idea why I need this -15 vmin to have the title be flush with the top of the page... */ 
+}
+
+h1 {
+  font-size: 20vmin;
+  line-height: 1.1;
+  /* https://bootcamp.uxdesign.cc/gradient-text-in-css-609068d3f953#:~:text=For%20example%20color%3A%20linear%2Dgradient,and%20the%20text%20more%20readable.
+  found this tutorial on how to make a gradient the text color*/
+  background: linear-gradient(.25turn, blue, tan);
+  background-clip: text;
+  /* color: transparent; */
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  gap: 1vmin;
+}
+
+main > * {
+  width: 30vmin;
+  display: flex;
+  flex-direction: column;
+  border: 1vmin solid white;
+  padding: 2vmin;
+  margin: 1vmin;
+}
+
+span {
+  font-weight: bold;
+  color: rgb(81, 149, 10)
+}
