@@ -5,7 +5,7 @@ const Receipts = (props) => {
     return <Paid name={props.person}/>
     }else {
         return (
-    <div>
+    <div className="receipt-card">
         <h1>Customer: {props.person}</h1>
         <h2>Order Number: {props.order}</h2>
         <h3>Main: {props.main}</h3>
