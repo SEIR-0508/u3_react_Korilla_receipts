@@ -1,14 +1,12 @@
-const Recipet =(props) => {
+const Receipt =(props) => {
     <div className="receipt-card">
         <h2>{props.person}</h2>
-        <p>Main: {props.order.main} </p>
-        <p>Protein: {props.order.protein} </p>
-        <p>Rice: {props.order.rice} </p>
-        <p>Sauce: {props.order.sauce} </p>
-        <p>Drink: {props.order.drink} </p>
-        <p>Cost: {props.order.cost} </p>
-
-
+        <p>Main: {props.main} </p>
+        <p>Protein: {props.protein} </p>
+        <p>Rice: {props.rice} </p>
+        <p>Sauce: {props.sauce} </p>
+        <p>Drink: {props.drink} </p>
+        <p>Cost: {props.cost} </p>
     </div>
 }
-export default Reciept
+export default Receipt

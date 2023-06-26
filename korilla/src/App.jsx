@@ -60,10 +60,21 @@ function App() {
       paid: true,
     },
   ]
+  let unpaidReceipts = []
+  for (let i=0; i <receipts.length; i++) {
+    if (receipts[i].paid === false) {
+      unpaidReceipts.push(<div className="receipts"> <Receipt id={receipts[i].id} person={receipts[i].person} main={receipts[i].order.main} protein={receipts[i].order.protein} rice={receipts[i].order.rice} sauce={receipts[i].order.sauce} drink={receipts[i].order.drink} cost={receipts[i].order.cost}/></div>)
+    } 
+  }
   return (
-    <Receipt
-      reciepts={receipts}
-    />
+    <div className="App">
+    <header className="appHeader">
+      <h1>Korilla</h1>
+    </header>
+    <div className="receipts">
+      {unpaidReceipts}
+    </div>
+    </div>
   )
 }
 
