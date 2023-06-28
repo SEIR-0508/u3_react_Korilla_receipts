@@ -68,9 +68,9 @@ function App() {
       </header>
 
       <div className="app-receipts">
-        {receipts.map((receipts) => (
-          <div className="receipt-card">
-            {
+        {receipts.map((receipts) => {
+        if (receipts.paid === false) {
+            return(
               <Receipts
                 person={receipts.person}
                 order={receipts.id}
@@ -80,11 +80,10 @@ function App() {
                 sauce={receipts.order.sauce}
                 drink={receipts.order.drink}
                 cost={receipts.order.cost}
-                paid={receipts.paid}
               />
-            }
-          </div>
-        ))}
+            
+          
+)}})}
       </div>
     </div>
   );
