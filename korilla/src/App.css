@@ -1,0 +1,16 @@
+body {
+  font-family: sans-serif;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.app-receipts {
+  display: flex-item;
+
+}
+
+.receipt-card {
+  border: 1px orange solid;
+
+}
