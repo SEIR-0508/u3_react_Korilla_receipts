@@ -1,4 +1,4 @@
-### SEIR 0508
+### SEIR 0911
 
 # Korilla React Receipts
 
@@ -47,7 +47,7 @@ const receipts = [
   },
   {
     id: 2,
-    person: 'Tiffany',
+    person: 'Brittany',
     order: {
       main: 'Rice Bowl',
       protein: 'Ginger Chicken',
@@ -61,7 +61,7 @@ const receipts = [
   },
   {
     id: 3,
-    person: 'Brittany',
+    person: 'Tom',
     order: {
       main: 'Salad Bowl',
       protein: 'Organic Tofu',
@@ -75,7 +75,7 @@ const receipts = [
   },
   {
     id: 4,
-    person: 'Tylus',
+    person: 'John',
     order: {
       main: 'Burrito Bowl',
       protein: 'Carnitas',
@@ -90,7 +90,7 @@ const receipts = [
 ];
 ```
 
-Make a Receipt component that renders the following data from the first receipt:
+Make a Receipt component that renders the following data from the receipt:
 
 - person
 - order
